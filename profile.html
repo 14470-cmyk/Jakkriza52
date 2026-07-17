@@ -1,1 +1,305 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ข้อมูลส่วนตัว</title>
 
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Tahoma,sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+}
+
+/* ===== Header ===== */
+
+header{
+    background:#4a90e2;
+    padding:15px 50px;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    color:white;
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+}
+
+nav ul li a:hover{
+    text-decoration:underline;
+}
+
+/* ===== กล่องข้อมูล ===== */
+
+.container{
+
+    max-width:1000px;
+    margin:50px auto;
+    background:white;
+    border-radius:15px;
+    padding:40px;
+    box-shadow:0 0 15px rgba(0,0,0,.15);
+
+}
+
+.title{
+
+    text-align:center;
+    color:#4a90e2;
+    margin-bottom:40px;
+
+}
+
+.profile{
+
+    display:flex;
+    gap:50px;
+    align-items:center;
+
+}
+
+.profile img{
+
+    width:260px;
+    height:260px;
+    border-radius:50%;
+    object-fit:cover;
+    border:6px solid #4a90e2;
+    box-shadow:0 8px 15px rgba(0,0,0,.2);
+
+}
+
+.info{
+
+    flex:1;
+
+}
+
+.info table{
+
+    width:100%;
+    border-collapse:collapse;
+
+}
+
+.info td{
+
+    padding:12px;
+    border-bottom:1px solid #ddd;
+    font-size:18px;
+
+}
+
+.info td:first-child{
+
+    width:180px;
+    font-weight:bold;
+    color:#4a90e2;
+
+}
+
+.quote{
+
+    margin-top:30px;
+    background:#eaf4ff;
+    padding:20px;
+    border-left:5px solid #4a90e2;
+    border-radius:10px;
+    color:#555;
+    line-height:1.8;
+
+}
+
+.back{
+
+    text-align:center;
+    margin-top:40px;
+
+}
+
+.back a{
+
+    background:#4a90e2;
+    color:white;
+    padding:12px 30px;
+    border-radius:8px;
+    text-decoration:none;
+
+}
+
+.back a:hover{
+
+    background:#2d6db7;
+
+}
+
+/* Footer */
+
+footer{
+
+    margin-top:50px;
+    background:#4a90e2;
+    color:white;
+    text-align:center;
+    padding:20px;
+
+}
+
+@media(max-width:768px){
+
+.profile{
+
+flex-direction:column;
+text-align:center;
+
+}
+
+.info td{
+
+display:block;
+width:100%;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<nav>
+
+<div class="logo">My Portfolio</div>
+
+<ul>
+
+<li><a href="index.html">หน้าแรก</a></li>
+<li><a href="profile.html">ข้อมูลส่วนตัว</a></li>
+<li><a href="education.html">ประวัติการศึกษา</a></li>
+<li><a href="projects.html">ผลงาน</a></li>
+<li><a href="contact.html">ติดต่อ</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<div class="container">
+
+<h1 class="title">👤 ข้อมูลส่วนตัว</h1>
+
+<div class="profile">
+
+<img src="profile.jpg" alt="Profile">
+
+<div class="info">
+
+<table>
+
+<tr>
+<td>ชื่อ - สกุล</td>
+<td>จักรกฤษณ์ วัฒนา</td>
+</tr>
+
+<tr>
+<td>ชื่อเล่น</td>
+<td>.......................</td>
+</tr>
+
+<tr>
+<td>วันเกิด</td>
+<td>.......................</td>
+</tr>
+
+<tr>
+<td>อายุ</td>
+<td>18 ปี</td>
+</tr>
+
+<tr>
+<td>กำลังศึกษา</td>
+<td>ชั้นมัธยมศึกษาปีที่ 6</td>
+</tr>
+
+<tr>
+<td>แผนการเรียน</td>
+<td>.......................</td>
+</tr>
+
+<tr>
+<td>งานอดิเรก</td>
+<td>ฟังเพลง เล่นกีฬา อ่านหนังสือ</td>
+</tr>
+
+<tr>
+<td>ความสามารถพิเศษ</td>
+<td>ใช้โปรแกรมคอมพิวเตอร์ / ทำเว็บไซต์</td>
+</tr>
+
+<tr>
+<td>เป้าหมาย</td>
+<td>ศึกษาต่อระดับมหาวิทยาลัย</td>
+</tr>
+
+</table>
+
+<div class="quote">
+
+<b>คติประจำใจ</b><br><br>
+
+"ความสำเร็จไม่ได้เกิดจากโชค
+แต่เกิดจากความพยายามในทุก ๆ วัน"
+
+</div>
+
+</div>
+
+</div>
+
+<div class="back">
+
+<a href="index.html">🏠 กลับหน้าแรก</a>
+
+</div>
+
+</div>
+
+<footer>
+
+<p>© 2026 Portfolio | Jakkri Wattana</p>
+
+</footer>
+
+</body>
+</html>
